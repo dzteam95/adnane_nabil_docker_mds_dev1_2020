@@ -61,9 +61,9 @@ app.use((error, req, res, next) => {
 
 mongoose
   .connect(
-    'mongodb+srv://Nabil:<Bejaia954>@cluster0-sfcbp.gcp.mongodb.net/test?retryWrites=true&w=majority'
+    'mongodb://locaclhost:27017'
   )
   .then(result => {
-    app.listen(8080);
+    app.listen(3000);
   })
   .catch(err => console.log(err));
